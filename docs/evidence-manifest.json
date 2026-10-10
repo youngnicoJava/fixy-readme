@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-10-10",
+  "kind": "PUBLIC_DEMO_BROWSER_SCREENSHOTS",
+  "demo": "https://youngnicojava.github.io/fixy-demo-frontend/",
+  "realBackendScreenshots": false,
+  "localServicesObserved": "UNAVAILABLE_NO_RESTART",
+  "privateFinancialOperationsExecuted": false,
+  "consoleErrorCounts": {
+    "conversation": 0,
+    "payments": 0,
+    "workerDashboard": 0
+  },
+  "screenshots": [
+    {
+      "sha256": "7636be21370d867e4be3e2fd866d58355208fe5a3dfe02c0fc68195c86786a62",
+      "file": "assets/screenshots/conversation-demo.jpg",
+      "route": "/#/conversations/6103",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT"
+    },
+    {
+      "sha256": "838afeb08a902ef8ce150735239ca11c8ba673ec59f1820911d2007d7d822ad4",
+      "file": "assets/screenshots/demo-info.jpg",
+      "route": "/#/demo-info",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT"
+    },
+    {
+      "sha256": "67105294bf4eab907ee8da748f27603c4d4a08a94f1ad1689d043686e96400ab",
+      "file": "assets/screenshots/home-demo.jpg",
+      "route": "/#/home",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT"
+    },
+    {
+      "sha256": "ec6dbdc2bc366c00456469076253e1fc6f92522f8d232ccb560faf680f62bec1",
+      "file": "assets/screenshots/payments-demo.jpg",
+      "route": "/#/payments",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT"
+    },
+    {
+      "sha256": "a978620cfbaca590fbffc000b295c31b1b77d72b1f54ddb571f295d0f2a925a1",
+      "file": "assets/screenshots/request-agreement-demo.jpg",
+      "route": "/#/requests/103",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT"
+    },
+    {
+      "sha256": "d1d9d1bdc3e38b9a9023843bd54c9911827c8c3b04b09bf4ad646b02955a4a5a",
+      "file": "assets/screenshots/worker-dashboard-demo.jpg",
+      "route": "/#/dashboard/worker",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT"
+    }
+  ]
+}
