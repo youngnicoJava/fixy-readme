@@ -1,247 +1,201 @@
-# 09 — Recorrido visual: capturas reales
+# 09 — Fixy conectado: frontend real y backend
 
-[Índice](README.md) · [Recorrido paso a paso](11-demo-walkthrough.md) · [Abrir demo](https://youngnicojava.github.io/fixy-demo-frontend/)
+[Índice](README.md) · [Demo pública independiente](https://youngnicojava.github.io/fixy-demo-frontend/) · [Archivo visual de la demo](12-demo-visual-archive.md)
 
-**27 capturas auténticas del frontend público**, obtenidas en navegador el 10/10/2026. No son mockups generados ni reconstrucciones de interfaces. Los nombres, direcciones, importes e IDs pertenecen a datos ficticios locales. Las imágenes no demuestran operaciones del backend privado ni cobros reales.
+Estas **19 capturas auténticas** corresponden al frontend privado Angular en `localhost:4200`, conectado a Spring en `:8080` y PostgreSQL histórico local. Payment Service se inició en `:9090`. Se obtuvieron el **10/10/2026**, con las cuentas de desarrollo autorizadas.
+
+Los nombres, ubicaciones y solicitudes visibles son datos de prueba cuya publicación fue autorizada por el propietario. No se incluyen contraseñas, emails de acceso, tokens, firmas, headers privados ni IDs de Mercado Pago. Los formularios de autenticación se capturaron vacíos.
+
+## Alcance de la evidencia
+
+- Es el producto conectado, no la demo que sustituye HTTP por almacenamiento local.
+- El ciclo se ilustra con solicitudes históricas en distintos estados. No es una nueva ejecución completa de una misma contratación.
+- No se creó Payment/preference, no se realizó checkout, no se enviaron webhooks ni se ejecutaron reconciliaciones/payouts.
+- El formulario de nueva solicitud se completó hasta revisión previa; **no se publicó**.
+- No se alteró código ni diseño para obtener las imágenes. Se acotaron vistas al contenido útil, evitando divulgar los datos de contacto del footer o una dirección de domicilio precisa del menú.
+- Las fotos de algunas publicaciones ya eran placeholders declarados por su autor. La pantalla es real; las fotos no demuestran trabajos ejecutados.
 
 ## Índice visual
 
-- [Autenticación](#autenticación)
-- [Navbar y direcciones](#navbar-y-direcciones)
-- [Dashboards](#dashboards)
-- [Publicación del profesional](#publicación-del-profesional)
-- [Publicación de una solicitud](#publicación-de-una-solicitud)
-- [Propuesta y selección](#propuesta-y-selección)
-- [Presupuesto y acuerdo](#presupuesto-y-acuerdo)
-- [Pago protegido e inicio](#pago-protegido-e-inicio)
-- [Completion y review: fixture](#completion-y-review-fixture)
-- [Pagos, chat e información](#pagos-chat-e-información)
-
-Las etapas de solicitud nueva hasta inicio corresponden al mismo caso: **Demo portfolio · Reparar pérdida de agua**. Completion y review se muestran desde un fixture independiente y están identificadas como tales. Los IDs de esa sesión no pueden compartirse como una contratación pública; cada visitante tiene su almacenamiento local.
+1. [Autenticación](#autenticación)
+2. [Navbar y direcciones](#navbar-y-direcciones)
+3. [Dashboards](#dashboards)
+4. [Publicación y solicitud](#publicación-y-solicitud)
+5. [ServiceRequest: lifecycle persistido](#servicerequest-lifecycle-persistido)
+6. [Pagos y chat](#pagos-y-chat)
+7. [Swagger real](#swagger-real)
 
 ## Autenticación
 
 
-### Formulario de login
+### Login del frontend conectado
 
-![Formulario de login](../assets/screenshots/auth-login-demo.jpg)
+![Login del frontend conectado](../assets/screenshots-real/auth-login.jpg)
 
-Formulario real con aviso de autenticación local. No representa login contra Spring ni prueba de JWT/refresh.
-
-
-### Login con usuario ficticio
-
-![Login con usuario ficticio](../assets/screenshots/auth-login-filled-demo.jpg)
-
-Campos completados con las credenciales públicas de la demo. No se introdujeron credenciales de una cuenta real.
+Formulario de ingreso real. Se iniciaron sesiones de cliente y worker para las vistas siguientes; las credenciales no aparecen en la imagen. La captura del formulario no demuestra por sí sola rotación de refresh.
 
 
-### Registro de cuenta
+### Registro
 
-![Registro de cuenta](../assets/screenshots/auth-register-demo.jpg)
+![Registro](../assets/screenshots-real/auth-register.jpg)
 
-Paso inicial con nombre, apellido, email y contraseña. No se creó una nueva cuenta ni se aceptaron términos para obtener esta imagen.
+Primer paso con nombre, apellido, email y contraseña. No se creó una cuenta nueva ni se enviaron documentos.
 
 
 ## Navbar y direcciones
 
 
-### Portada y navegación
+### Portada real
 
-![Portada y navegación](../assets/screenshots/home-demo.jpg)
+![Portada real](../assets/screenshots-real/home.jpg)
 
-Marca Fixy (demo), búsqueda por oficio y acceso a profesionales. El buscador del navbar aparece deshabilitado; esta imagen no demuestra búsquedas al backend.
-
-
-### Menú de cuenta abierto
-
-![Menú de cuenta abierto](../assets/screenshots/navbar-account-demo.jpg)
-
-Identidad del usuario y accesos a Panel, Mis solicitudes, Pagos y Panel profesional. Se utilizó Panel para navegar al dashboard cliente.
+Navbar y portada del frontend privado. Sin barra de demo ni sustitución local de API. Se conserva el producto tal como está renderizado.
 
 
-### Selector de direcciones desplegado
+### Menú del navbar
 
-![Selector de direcciones desplegado](../assets/screenshots/navbar-addresses-demo.jpg)
+![Menú del navbar](../assets/screenshots-real/navbar-worker.jpg)
 
-Dirección activa ficticia y acciones editar, eliminar y agregar. No se borraron ni modificaron direcciones.
+Menú abierto bajo la identidad del worker. Panel profesional se utilizó para acceder al dashboard. El buscador del navbar aparece deshabilitado: no se declara validada esa búsqueda.
 
 
-### Modal de dirección
+### Address modal con Leaflet
 
-![Modal de dirección](../assets/screenshots/address-modal-demo.jpg)
+![Address modal con Leaflet](../assets/screenshots-real/address-modal.jpg)
 
-Casa/Trabajo/Otro, dirección, piso y departamento. La ubicación de demostración reemplaza el mapa externo: no se presenta como evidencia de HERE/Leaflet activo.
+Tipo de dirección, buscador, piso/departamento y mapa Leaflet con tiles OpenStreetMap. Formulario vacío y ubicación inicial del mapa. No se solicitó geolocalización ni se guardó una dirección.
 
 
 ## Dashboards
 
 
-### Dashboard del cliente
+### Dashboard cliente
 
-![Dashboard del cliente](../assets/screenshots/client-dashboard-demo.jpg)
+![Dashboard cliente](../assets/screenshots-real/client-dashboard.jpg)
 
-Resumen de actividad, solicitudes, profesional seleccionado y accesos a publicar. Permite distinguir solicitudes abiertas, seleccionadas y en progreso.
+Actividad y solicitudes obtenidas del backend. Las cards muestran estado y profesional seleccionado; Nueva solicitud conduce al formulario real y Pagos mantiene el contexto de contratación.
 
 
 ### Dashboard profesional
 
-![Dashboard profesional](../assets/screenshots/worker-dashboard-demo.jpg)
+![Dashboard profesional](../assets/screenshots-real/worker-dashboard.jpg)
 
-Verificación, oportunidades, servicios, propuestas y actividad de Luca Prodan. Rating y trabajos completados provienen de fixtures.
-
-
-## Publicación del profesional
+Verificación, reputación, servicio en curso, publicaciones y propuestas existentes. El aviso contextual describe presupuesto y pago protegido como pasos previos al inicio en el flujo actual.
 
 
-### Detalle del servicio publicado
-
-![Detalle del servicio publicado](../assets/screenshots/service-offering-detail-demo.jpg)
-
-Offering con precio desde, descripción, profesional, opiniones y CTA para crear una solicitud. La ausencia real de imágenes se conserva; no se añadió una foto falsa. Una offering no crea un pago automáticamente.
+## Publicación y solicitud
 
 
-## Publicación de una solicitud
+### Detalle de publicación profesional
+
+![Detalle de publicación profesional](../assets/screenshots-real/service-offering-detail.jpg)
+
+Se abrió desde la imagen de un servicio visible en home. Incluye galería, precio orientativo, profesional, descripción y opiniones. La offering no equivale a un Payment; las fotos del anuncio son placeholders declarados en sus datos.
 
 
 ### Crear solicitud
 
-![Crear solicitud](../assets/screenshots/request-create-demo.jpg)
+![Crear solicitud](../assets/screenshots-real/request-create.jpg)
 
-Título, categoría y descripción completados con un caso ficticio. El cliente expresa la necesidad; todavía no existe contrato ni pago.
+Título, categoría y descripción introducidos como borrador para mostrar la interacción. No se persistió una nueva solicitud.
 
 
-### Revisión antes de publicar
+### Publish: revisión previa
 
-![Revisión antes de publicar](../assets/screenshots/request-publish-review-demo.jpg)
+![Publish: revisión previa](../assets/screenshots-real/request-publish-review.jpg)
 
-Pantalla publish con el resumen y explicación de qué ocurre después. Se avanzó desde el formulario y se publicó realmente en el estado local de la demo.
+Resumen real y CTA Publicar solicitud. Se detuvo aquí para conservar los datos históricos: no se pulsó publicar.
 
 
-### Solicitud publicada: OPEN
+## ServiceRequest: lifecycle persistido
 
-![Solicitud publicada: OPEN](../assets/screenshots/request-open-demo.jpg)
 
-Detalle con necesidad, ubicación ficticia, cero propuestas e historial de publicación. Captura de la nueva solicitud local, no un registro privado.
+### OPEN: necesidad publicada
 
+![OPEN: necesidad publicada](../assets/screenshots-real/request-open.jpg)
 
-## Propuesta y selección
+Solicitud existente, comentarios, propuestas e historial. Es un registro histórico abierto; la captura no certifica su scheduler de expiración ni renueva su vigencia.
 
 
-### Enviar propuesta como profesional
+### MATCHED: presupuesto y acuerdo
 
-![Enviar propuesta como profesional](../assets/screenshots/proposal-create-demo.jpg)
+![MATCHED: presupuesto y acuerdo](../assets/screenshots-real/request-matched-agreement.jpg)
 
-Mensaje y modalidad Evaluar y enviar presupuesto. La elección permite explicar por qué seleccionar al profesional todavía no fija el precio.
+Desplegables abiertos con presupuesto desglosado, snapshot del acuerdo y protección. El pago del fixture sigue pendiente y no se ejecutó el CTA. El fixture financiero de anomalía permanece intacto; esta imagen no autoriza repetir su checkout.
 
 
-### Propuesta recibida: vista cliente
+### IN_PROGRESS histórico
 
-![Propuesta recibida: vista cliente](../assets/screenshots/request-proposals-demo.jpg)
+![IN_PROGRESS histórico](../assets/screenshots-real/request-in-progress.jpg)
 
-Luca Prodan aparece como profesional interesado, con propuesta pendiente, mensaje y botón Seleccionar. El cliente puede distinguir identidad, oferta y estado.
+Solicitud previa a la evolución actual: trabajo en progreso mientras el pago sigue pendiente. Se conserva esa inconsistencia histórica, sin corregirla para obtener una captura. No representa el happy path vigente, que exige confirmación financiera antes de iniciar.
 
 
-### Profesional seleccionado: MATCHED
+### COMPLETED + HELD + review
 
-![Profesional seleccionado: MATCHED](../assets/screenshots/request-matched-demo.jpg)
+![COMPLETED + HELD + review](../assets/screenshots-real/request-completed-review.jpg)
 
-Contexto de contratación y chat disponibles. El aviso explica que el importe debe confirmarse mediante presupuesto estructurado.
+Golden Path histórico con presupuesto aceptado, acuerdo, pago protegido, review 5/5 e historial persistido. El historial registra confirmación por reconciliación, inicio, finalización y valoración. COMPLETED y SETTLED son decisiones distintas. No se ejecutaron esas transiciones de nuevo.
 
 
-## Presupuesto y acuerdo
+## Pagos y chat
 
 
-### Crear presupuesto estructurado
+### Pagos pendientes
 
-![Crear presupuesto estructurado](../assets/screenshots/quote-create-demo.jpg)
+![Pagos pendientes](../assets/screenshots-real/payments-pending.jpg)
 
-Mano de obra 45.000, materiales 10.000 y alcance detallado; total 55.000 ficticios. La UI diferencia estos datos de un mensaje de chat.
+Listado real de operaciones por contratación, sin checkout combinado. No se pulsó Pagar en ninguna card.
 
 
-### Presupuesto pendiente de aceptación
+### Pagos protegidos
 
-![Presupuesto pendiente de aceptación](../assets/screenshots/quote-pending-demo.jpg)
+![Pagos protegidos](../assets/screenshots-real/payments-protected.jpg)
 
-Tarjeta de revisión con desglose y acciones Aceptar presupuesto/Rechazar. La aceptación es una acción explícita del cliente.
+La pestaña Protegidos carga el Golden Path histórico desde Spring. No es simulación local de dinero. La fecha de protección ya pasó pero el estado observado sigue HELD; no se declara settlement automático PASS.
 
 
-### Acuerdo de la nueva contratación
+### Chat con contexto comercial
 
-![Acuerdo de la nueva contratación](../assets/screenshots/agreement-accepted-demo.jpg)
+![Chat con contexto comercial](../assets/screenshots-real/conversation-contract.jpg)
 
-Snapshot de importe y alcance tras aceptar. El CTA Pagar contratación se encuentra en RequestDetail, sin depender del chat.
+Como worker, header y listado identifican al cliente. El acuerdo y el pago protegido aparecen en el chat. La conversación seleccionada está vacía: no se inventaron mensajes ni se envió contenido para llenar la pantalla.
 
 
-### Acuerdo del fixture inicial
+## Swagger real
 
-![Acuerdo del fixture inicial](../assets/screenshots/request-agreement-demo.jpg)
 
-Vista completa del fixture 103, capturada antes de la nueva solicitud. Mantiene presupuesto, profesional, comentarios e historial. No es otro cobro ejecutado.
+### OpenAPI servido por Spring
 
+![OpenAPI servido por Spring](../assets/screenshots-real/backend-swagger.jpg)
 
-## Pago protegido e inicio
+Documento cargado desde /v3/api-docs en la aplicación activa. No se autorizó Swagger con tokens ni se ejecutó Try it out.
 
 
-### Confirmación de pago simulado
+### API de contratación y lifecycle
 
-![Confirmación de pago simulado](../assets/screenshots/payment-simulation-modal-demo.jpg)
+![API de contratación y lifecycle](../assets/screenshots-real/backend-contract-api.jpg)
 
-El diálogo informa explícitamente que no cobra dinero ni abre Mercado Pago. Se conserva para evitar confundir la interacción local con Checkout Pro TEST.
+Endpoints reales de inicio/finalización y controller de visitas, presupuestos y acuerdo. La imagen proviene de Swagger activo, no de una interfaz reconstruida.
 
 
-### Pago protegido: HELD simulado
+## Entorno y validación
 
-![Pago protegido: HELD simulado](../assets/screenshots/request-held-demo.jpg)
+| Comprobación | Resultado |
+|---|---|
+| Angular /home, puerto 4200 | HTTP 200 |
+| Spring /v3/api-docs, puerto 8080 | HTTP 200 |
+| Payment /health, puerto 9090 | HTTP 200 |
+| PostgreSQL local de Fixy, puerto 5433 | 28 tablas; conexión de Spring correcta |
+| Sesiones cliente y worker | Vistas por rol cargadas |
+| Leaflet/OpenStreetMap | Mapa visible en address modal |
+| Contrataciones | Estados leídos de registros existentes |
+| DB schema | Arranque con ddl-auto=validate, sin actualización DDL |
+| Liquidación automática | Desactivada sólo en el proceso de captura |
+| Consola | Dos avisos ResizeObserver loop completed with undelivered notifications observados; no se declara consola limpia |
 
-El acuerdo conserva importe y alcance; el estado financiero aparece protegido. No hubo API del proveedor, webhook ni movimiento real de dinero.
+No se modificaron estados de dominio ni se ejecutaron suites privadas nuevas para este cambio documental. Iniciar sesión utiliza el mecanismo normal de autenticación y puede registrar tokens de sesión; no se afirma que toda la DB haya sido inmutable.
 
+El proceso de captura conservó HELD sin ejecutar release. La revisión visual no acredita settlement productivo ni webhook real firmado PASS. [Testing y evidencia](08-testing-and-evidence.md).
 
-### Trabajo iniciado: IN_PROGRESS
-
-![Trabajo iniciado: IN_PROGRESS](../assets/screenshots/request-in-progress-demo.jpg)
-
-El worker inició mediante la acción disponible y el historial refleja Trabajo iniciado. El pago ficticio permanece protegido; iniciar no equivale a liquidar.
-
-
-## Completion y review: fixture
-
-
-### Contratación completada y review precargadas
-
-![Contratación completada y review precargadas](../assets/screenshots/request-completed-review-fixture-demo.jpg)
-
-Fixture 105 independiente: estado Completada, review ficticia 5/5 y pago liquidado precargado. La solicitud nueva se capturó hasta IN_PROGRESS; el diálogo nativo de completion bloqueó la automatización. Esta imagen NO certifica completion/settlement/review nuevos.
-
-
-## Pagos, chat e información
-
-
-### Área Pagos
-
-![Área Pagos](../assets/screenshots/payments-demo.jpg)
-
-Listado por contratación con profesional, importe y acciones. Captura de los fixtures iniciales; no es checkout agregado ni prueba de liquidación.
-
-
-### Conversación y contexto comercial
-
-![Conversación y contexto comercial](../assets/screenshots/conversation-demo.jpg)
-
-José María Paz ve a Luca Prodan en lista y header; sender del mensaje e interlocutor son conceptos distintos. El acuerdo persiste como contexto comercial. No se enviaron mensajes reales.
-
-
-### Información y límites
-
-![Información y límites](../assets/screenshots/demo-info.jpg)
-
-Explica datos locales, operaciones simuladas, cómo se conectaría el sistema y enlace a documentación técnica.
-
-
-## Evidencia backend y trazabilidad
-
-Se inspeccionó el código privado para redactar los documentos técnicos. **No se incluye captura de Swagger:** Spring no respondió durante esa revisión, y no se generó una pantalla falsa ni se levantó una base vacía para ilustrarlo.
-
-Los JPEG están en `assets/screenshots`. El [manifest](evidence-manifest.json) registra ruta, tipo de evidencia y hash SHA-256. La nueva secuencia es `DEMO_SIMULATED`, separada de `PRESEEDED_DEMO_FIXTURE` y de las pruebas financieras privadas históricas. La galería no convierte un fixture en un E2E real aprobado.
-
-[Cómo recorrer las pantallas](11-demo-walkthrough.md) · [Alcance de pruebas](08-testing-and-evidence.md)
+El [manifest](evidence-manifest.json) registra hashes SHA-256, rutas y origen de las imágenes, separando frontend conectado, Swagger y la demo archivada.

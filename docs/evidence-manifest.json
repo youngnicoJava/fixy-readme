@@ -1,16 +1,11 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "reviewDate": "2026-10-10",
-  "kind": "PUBLIC_DEMO_BROWSER_SCREENSHOTS",
+  "kind": "CONNECTED_LOCAL_PRIMARY_WITH_PUBLIC_DEMO_ARCHIVE",
   "demo": "https://youngnicojava.github.io/fixy-demo-frontend/",
-  "realBackendScreenshots": false,
-  "localServicesObserved": "UNAVAILABLE_NO_RESTART",
+  "realBackendScreenshots": true,
+  "localServicesObserved": "ANGULAR_4200_SPRING_8080_PAYMENT_9090_POSTGRES_5433_ACTIVE",
   "privateFinancialOperationsExecuted": false,
-  "consoleErrorCounts": {
-    "conversation": 0,
-    "payments": 0,
-    "workerDashboard": 0
-  },
   "screenshots": [
     {
       "file": "assets/screenshots/address-modal-demo.jpg",
@@ -200,6 +195,158 @@
       "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
       "evidenceKind": "PUBLIC_DEMO_UI",
       "sha256": "d1d9d1bdc3e38b9a9023843bd54c9911827c8c3b04b09bf4ad646b02955a4a5a"
+    },
+    {
+      "file": "assets/screenshots-real/address-modal.jpg",
+      "route": "/home",
+      "scope": "AUTHORIZED_LOCAL_DEVELOPMENT_TEST_DATA",
+      "evidenceKind": "CONNECTED_LOCAL_FRONTEND",
+      "origin": "http://localhost:4200",
+      "sha256": "5666ac3b4e775733e41eb0b680a173df1066af1552cd9b9d887814fbda43e27d"
+    },
+    {
+      "file": "assets/screenshots-real/auth-login.jpg",
+      "route": "/login",
+      "scope": "AUTHORIZED_LOCAL_DEVELOPMENT_TEST_DATA",
+      "evidenceKind": "CONNECTED_LOCAL_FRONTEND",
+      "origin": "http://localhost:4200",
+      "sha256": "2e843708de2fe41a58eb3db88724461ae49f62a79bb77b7316c640659116868a"
+    },
+    {
+      "file": "assets/screenshots-real/auth-register.jpg",
+      "route": "/register",
+      "scope": "AUTHORIZED_LOCAL_DEVELOPMENT_TEST_DATA",
+      "evidenceKind": "CONNECTED_LOCAL_FRONTEND",
+      "origin": "http://localhost:4200",
+      "sha256": "8886e895867100bf117da28491d411a94504d66cc10670770bf193f703ba339b"
+    },
+    {
+      "file": "assets/screenshots-real/backend-contract-api.jpg",
+      "route": "/swagger-ui/index.html#/contract-controller",
+      "scope": "AUTHORIZED_LOCAL_DEVELOPMENT_TEST_DATA",
+      "evidenceKind": "LIVE_BACKEND_SWAGGER",
+      "origin": "http://localhost:8080",
+      "sha256": "f374f3272ca0289b60284a552f652548d10a15a98f5dd461fa9247fb018eaec8"
+    },
+    {
+      "file": "assets/screenshots-real/backend-swagger.jpg",
+      "route": "/swagger-ui/index.html",
+      "scope": "AUTHORIZED_LOCAL_DEVELOPMENT_TEST_DATA",
+      "evidenceKind": "LIVE_BACKEND_SWAGGER",
+      "origin": "http://localhost:8080",
+      "sha256": "3ad13f55d4e8e25e6cfc9f892a83058c729cca9b3dda9da6957e45cdbc21680d"
+    },
+    {
+      "file": "assets/screenshots-real/client-dashboard.jpg",
+      "route": "/dashboard/client",
+      "scope": "AUTHORIZED_LOCAL_DEVELOPMENT_TEST_DATA",
+      "evidenceKind": "CONNECTED_LOCAL_FRONTEND",
+      "origin": "http://localhost:4200",
+      "sha256": "57513d848343bf72f8138da36b0e5216b54055c72cb637ac6b708afe64efc0b4"
+    },
+    {
+      "file": "assets/screenshots-real/conversation-contract.jpg",
+      "route": "/conversations",
+      "scope": "AUTHORIZED_LOCAL_DEVELOPMENT_TEST_DATA",
+      "evidenceKind": "CONNECTED_LOCAL_FRONTEND",
+      "origin": "http://localhost:4200",
+      "sha256": "9797be6b8cdc79a888a7eb55c50e7468e874c46e72c4e23611af0b6f84e2d316"
+    },
+    {
+      "file": "assets/screenshots-real/home.jpg",
+      "route": "/home",
+      "scope": "AUTHORIZED_LOCAL_DEVELOPMENT_TEST_DATA",
+      "evidenceKind": "CONNECTED_LOCAL_FRONTEND",
+      "origin": "http://localhost:4200",
+      "sha256": "bd13222d90a500e41d875fe0a33b3790a96e33040f65b984ff9123aea85d9811"
+    },
+    {
+      "file": "assets/screenshots-real/navbar-worker.jpg",
+      "route": "/home",
+      "scope": "AUTHORIZED_LOCAL_DEVELOPMENT_TEST_DATA",
+      "evidenceKind": "CONNECTED_LOCAL_FRONTEND",
+      "origin": "http://localhost:4200",
+      "sha256": "7f84fc795133d49fa9c1b64cdc8880a490a396b380870920ef27280a6fe11fba"
+    },
+    {
+      "file": "assets/screenshots-real/payments-pending.jpg",
+      "route": "/payments",
+      "scope": "AUTHORIZED_LOCAL_DEVELOPMENT_TEST_DATA",
+      "evidenceKind": "CONNECTED_LOCAL_FRONTEND",
+      "origin": "http://localhost:4200",
+      "sha256": "d3f7b0a496b46857ad85d0cdda34a91d450486492944b3164072cf561068b47b"
+    },
+    {
+      "file": "assets/screenshots-real/payments-protected.jpg",
+      "route": "/payments",
+      "scope": "AUTHORIZED_LOCAL_DEVELOPMENT_TEST_DATA",
+      "evidenceKind": "CONNECTED_LOCAL_FRONTEND",
+      "origin": "http://localhost:4200",
+      "sha256": "eb939c4a4c551be7f65dae7baadbd21e426bd469524ea79b225eb88306a685ed"
+    },
+    {
+      "file": "assets/screenshots-real/request-completed-review.jpg",
+      "route": "/requests/452",
+      "scope": "AUTHORIZED_LOCAL_DEVELOPMENT_TEST_DATA",
+      "evidenceKind": "CONNECTED_LOCAL_FRONTEND",
+      "origin": "http://localhost:4200",
+      "sha256": "4e15327fe5cc9dcd4b5168f868a983099b468555cfa6f14b375a56ba1d5acaf2"
+    },
+    {
+      "file": "assets/screenshots-real/request-create.jpg",
+      "route": "/requests/new",
+      "scope": "AUTHORIZED_LOCAL_DEVELOPMENT_TEST_DATA",
+      "evidenceKind": "CONNECTED_LOCAL_FRONTEND",
+      "origin": "http://localhost:4200",
+      "sha256": "f5db8e08eaed3a237474750ad8ed949984e1473b69c5b0d3f5acd482d4a93636"
+    },
+    {
+      "file": "assets/screenshots-real/request-in-progress.jpg",
+      "route": "/requests/353",
+      "scope": "AUTHORIZED_LOCAL_DEVELOPMENT_TEST_DATA",
+      "evidenceKind": "CONNECTED_LOCAL_FRONTEND",
+      "origin": "http://localhost:4200",
+      "sha256": "35ee2aede9c35d7571cf44ade74f6a7e5fb17d8de2b0ce3aa2864f01b080b090"
+    },
+    {
+      "file": "assets/screenshots-real/request-matched-agreement.jpg",
+      "route": "/requests/403",
+      "scope": "AUTHORIZED_LOCAL_DEVELOPMENT_TEST_DATA",
+      "evidenceKind": "CONNECTED_LOCAL_FRONTEND",
+      "origin": "http://localhost:4200",
+      "sha256": "fdbaef531b83573b33bcb2c9e6939cbd436388d192fe9f8f85363a1083ddf45b"
+    },
+    {
+      "file": "assets/screenshots-real/request-open.jpg",
+      "route": "/requests/302",
+      "scope": "AUTHORIZED_LOCAL_DEVELOPMENT_TEST_DATA",
+      "evidenceKind": "CONNECTED_LOCAL_FRONTEND",
+      "origin": "http://localhost:4200",
+      "sha256": "e9f07b0466a05c7ad8b2476a9d64c1b58f73a7e2a2515329a190bc3fb89f8b7a"
+    },
+    {
+      "file": "assets/screenshots-real/request-publish-review.jpg",
+      "route": "/requests/publish",
+      "scope": "AUTHORIZED_LOCAL_DEVELOPMENT_TEST_DATA",
+      "evidenceKind": "CONNECTED_LOCAL_FRONTEND",
+      "origin": "http://localhost:4200",
+      "sha256": "8b8c0cb19406e2ca085e0e753c4a85776e2b7c3bb8c14dad18eb2b9fa9322382"
+    },
+    {
+      "file": "assets/screenshots-real/service-offering-detail.jpg",
+      "route": "/services/1",
+      "scope": "AUTHORIZED_LOCAL_DEVELOPMENT_TEST_DATA",
+      "evidenceKind": "CONNECTED_LOCAL_FRONTEND",
+      "origin": "http://localhost:4200",
+      "sha256": "a467f723854fccd3eb66afe00430b58a92d2ce54b979e26b9218987250be6e10"
+    },
+    {
+      "file": "assets/screenshots-real/worker-dashboard.jpg",
+      "route": "/dashboard/worker",
+      "scope": "AUTHORIZED_LOCAL_DEVELOPMENT_TEST_DATA",
+      "evidenceKind": "CONNECTED_LOCAL_FRONTEND",
+      "origin": "http://localhost:4200",
+      "sha256": "9473e8afcc1a00fb0e2ed2c82fb3a5c02f4bef39626cce56767af930929f9b2f"
     }
   ],
   "capturedDemoSequence": {
@@ -215,5 +362,21 @@
     "review": "PRESEEDED_FIXTURE_105_ONLY",
     "realProviderCallsExecuted": false,
     "sharedPublicRequest": false
+  },
+  "connectedCapture": {
+    "date": "2026-10-10",
+    "publicationOfTestNamesRequestsLocations": "EXPLICITLY_AUTHORIZED_BY_OWNER",
+    "newFinancialOperationsExecuted": false,
+    "newServiceRequestsPublished": false,
+    "newReviewsCreated": false,
+    "automaticSettlementEnabled": false,
+    "ddlAuto": "validate",
+    "consoleObservation": "Two ResizeObserver loop notifications; not declared clean",
+    "workLifecycleEvidence": "EXISTING_HISTORICAL_RECORDS_NOT_A_NEW_E2E"
+  },
+  "demoConsoleErrorCounts": {
+    "conversation": 0,
+    "payments": 0,
+    "workerDashboard": 0
   }
 }

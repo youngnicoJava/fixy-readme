@@ -83,9 +83,11 @@ Esto demuestra la necesidad de separar “el proveedor aprobó algo” de “hay
 
 El fixture sirve para regresión negativa. No se considera parte del Golden Path válido ni se publica como datos para reutilizar sus cobros.
 
-## 7. Comprobaciones nuevas de esta publicación
+## 7. Comprobaciones visuales: demo y sistema conectado
 
 Fecha: **10/10/2026**.
+
+**Primera captura: demo pública, antes de iniciar los servicios privados.**
 
 - Demo pública abierta en navegador real: portada, RequestDetail con agreement, Pagos, chat y dashboard worker.
 - Capturas guardadas con avisos de datos ficticios/sin backend.
@@ -94,6 +96,18 @@ Fecha: **10/10/2026**.
 - Spring `/v3/api-docs` y Go `/health` locales: no disponibles durante esta revisión; no se levantaron servicios ni se hicieron pagos para obtener material.
 - No se generó captura ficticia de Swagger.
 - Se revisaron enlaces locales, imágenes, fences y contenido público antes de publicar.
+
+**Segunda captura: frontend privado conectado, con publicación autorizada de datos de prueba.**
+
+- Se reutilizó Angular activo en :4200 y PostgreSQL histórico en :5433, con 28 tablas.
+- Se iniciaron Spring :8080 con `ddl-auto=validate` y Payment Service :9090; Angular /home, Spring /v3/api-docs y Payment /health respondieron HTTP 200.
+- Se ingresó con cuentas de cliente y worker mediante login normal. Los formularios de auth se capturaron vacíos, sin publicar credenciales.
+- Se obtuvieron 19 capturas del producto conectado y Swagger auténtico, incluyendo mapa Leaflet/OpenStreetMap.
+- Se consultaron estados históricos OPEN, MATCHED, IN_PROGRESS y COMPLETED, además de acuerdo, presupuesto, HELD y review. Se explica la inconsistencia histórica de la solicitud en progreso con pago pendiente; no se presenta como el happy path actual.
+- No se publicaron solicitudes ni se ejecutaron pagos, preferences, reconciliación, webhook, review o payout. El borrador se detuvo en revisión de publicación.
+- La liquidación automática se desactivó sólo para este proceso de captura. El Golden Path completado sigue HELD y no se considera settlement PASS.
+- Se observaron dos notificaciones ResizeObserver en consola. No se declara ausencia total de errores.
+- La [galería conectada](09-visual-tour.md) reemplaza a la demo como evidencia visual principal; la [demo anterior](12-demo-visual-archive.md) queda separada.
 
 No se reejecutó la suite privada de backend/frontend/Go para un cambio exclusivamente documental. Las ejecuciones históricas están etiquetadas como tales. No se afirma un nuevo build privado PASS.
 

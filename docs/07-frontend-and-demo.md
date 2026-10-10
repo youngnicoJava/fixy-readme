@@ -140,3 +140,9 @@ Requisitos declarados: Bun 1.3.14 y Node compatible con Angular 22 según engine
 Se abrieron home, detalle con agreement, Pagos, conversación e interfaz profesional de la demo publicada. Se comprobaron lista/header con interlocutor, separación financiera y avisos demo. Las lecturas de consola de chat, Pagos y dashboard capturados no mostraron errores.
 
 No se ejecutó checkout, no se alteró Payment privado y no se declara un nuevo E2E completo por haber obtenido imágenes. No se hizo una auditoría de responsive exhaustiva en esta publicación; la revisión móvil previa se identifica en la evidencia histórica.
+
+## Evidencia visual del producto conectado
+
+La [galería principal](09-visual-tour.md) usa el frontend privado conectado a Spring/PostgreSQL, con Payment Service activo. Incluye dashboards, mapa Leaflet/OpenStreetMap, formularios, publicación, lifecycle histórico, pagos, chat y Swagger. Se obtuvieron imágenes nuevas sin ejecutar operaciones financieras ni completar otra contratación.
+
+La galería de la demo descrita arriba permanece en el [archivo separado](12-demo-visual-archive.md). Los avisos de consola limpia de aquella observación no se extrapolan al producto conectado: en la captura local se observaron dos notificaciones ResizeObserver.

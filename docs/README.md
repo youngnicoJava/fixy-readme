@@ -14,9 +14,10 @@ Esta documentación describe tres proyectos privados que cooperan: frontend Angu
 6. [API](06-api-contracts.md): contratos HTTP y ejemplos explicativos.
 7. [Frontend y demo](07-frontend-and-demo.md): composición de pantallas y simulación.
 8. [Testing](08-testing-and-evidence.md): qué evidencia existe y qué falta demostrar.
-9. [Galería](09-visual-tour.md): capturas reales de la demo publicada.
+9. [Galería conectada](09-visual-tour.md): frontend privado activo y Swagger real.
 10. [Decisiones y backlog](10-decisions-and-roadmap.md): alcance deliberado y trabajo pendiente.
-11. [Recorrido de la demo](11-demo-walkthrough.md): pasos por rol, publicación, contratación y límites de la evidencia visual.
+11. [Recorrido de la demo](11-demo-walkthrough.md): pasos de la aplicación pública independiente.
+12. [Archivo visual de la demo](12-demo-visual-archive.md): material anterior separado del frontend conectado.
 
 ## Cómo interpretar las afirmaciones
 

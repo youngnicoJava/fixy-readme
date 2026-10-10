@@ -8,33 +8,35 @@ Fixy conecta a personas que necesitan resolver un problema con profesionales de 
 
 > Este repositorio publica documentación y evidencia visual. El código principal de Fixy —frontend conectado, backend y Payment— se mantiene privado. La demo pública es una aplicación independiente, con datos ficticios y operaciones locales: no conecta al backend ni cobra dinero. El sistema privado continúa en desarrollo; los estados financieros implementados no equivalen a una integración de liquidaciones productiva terminada.
 
-![Fixy: portada real de la demo publicada](assets/screenshots/home-demo.jpg)
+![Fixy: frontend real conectado al backend local](assets/screenshots-real/home.jpg)
 
-*Captura del frontend público, tomada en navegador el 10 de octubre de 2026. Las capturas de este repositorio corresponden a la demo, no a una plataforma productiva.*
+*Frontend privado conectado a Spring/PostgreSQL en desarrollo local, capturado el 10/10/2026. La demo pública enlazada arriba es independiente. Las imágenes no representan un despliegue productivo.*
 
-## Recorrido visual ampliado
+## Recorrido visual del sistema conectado
 
-**[Ver las 27 capturas comentadas](docs/09-visual-tour.md) · [Seguir la demo paso a paso](docs/11-demo-walkthrough.md)**
+**[Ver las 19 capturas del frontend real y Swagger](docs/09-visual-tour.md)**
 
-La galería incluye login y registro, navbar con menús desplegados, modal de direcciones, dashboards cliente/profesional, detalle de publicación y una solicitud nueva desde publicación hasta trabajo en progreso. Presupuesto, acuerdo y pago simulado se muestran como etapas distintas. Completion y review están ilustradas con un fixture identificado, no como una transición nueva certificada.
+Login/registro, navbar, modal con Leaflet/OpenStreetMap, dashboards cliente/profesional, detalle de servicio, creación y revisión de solicitud, estados persistidos, presupuesto, acuerdo, Pagos y chat. El ciclo se ilustra con registros históricos existentes; no se ejecutaron nuevos pagos para obtener imágenes.
 
 <details>
-<summary>Ver modal de direcciones y navegación de cuenta</summary>
+<summary>Modal de direcciones y dashboard cliente reales</summary>
 
-![Modal real de dirección en la demo](assets/screenshots/address-modal-demo.jpg)
+![Address modal real con mapa](assets/screenshots-real/address-modal.jpg)
 
-![Navbar con menú de cuenta abierto](assets/screenshots/navbar-account-demo.jpg)
+![Dashboard cliente conectado al backend](assets/screenshots-real/client-dashboard.jpg)
 
 </details>
 
 <details>
-<summary>Ver dashboard cliente y detalle del servicio publicado</summary>
+<summary>Detalle de publicación y API backend activa</summary>
 
-![Dashboard real del cliente](assets/screenshots/client-dashboard-demo.jpg)
+![Detalle de servicio del frontend privado](assets/screenshots-real/service-offering-detail.jpg)
 
-![Detalle de publicación del profesional](assets/screenshots/service-offering-detail-demo.jpg)
+![Swagger real de contratación](assets/screenshots-real/backend-contract-api.jpg)
 
 </details>
+
+La [galería anterior de la demo](docs/12-demo-visual-archive.md) queda archivada y separada del producto conectado.
 
 ## Contenido
 
@@ -151,7 +153,7 @@ El pago nace del acuerdo aceptado. Confirmarlo produce `HELD` en el dominio de F
 
 El default de protección es `P3D`, configurable y copiado al acuerdo/pago. La política recibe categoría como punto de extensión, pero actualmente no inventa duraciones distintas por oficio. La review puede publicarse al completar el trabajo, sin esperar una liquidación.
 
-![Acuerdo y pago dentro del detalle real de una solicitud de la demo](assets/screenshots/request-agreement-demo.jpg)
+![Trabajo completado, acuerdo, pago HELD y review en el frontend conectado](assets/screenshots-real/request-completed-review.jpg)
 
 ## Modelo de dominio
 
@@ -260,7 +262,7 @@ El backend entrega `counterpart` en los DTOs de conversación: para el cliente e
 
 La review pertenece a una contratación completada. El cliente no elige otro worker en el body: se obtiene de la propuesta seleccionada. El promedio se calcula desde las reviews persistidas y se actualiza en el perfil profesional.
 
-![Lista y encabezado identifican al otro participante; el chat muestra el contexto del acuerdo](assets/screenshots/conversation-demo.jpg)
+![Lista y encabezado identifican al otro participante; el chat muestra el contexto del acuerdo](assets/screenshots-real/conversation-contract.jpg)
 
 ## Frontend y demo
 
@@ -280,7 +282,9 @@ La demo agrega motor local, fixtures, cambio de rol, persistencia versionada y g
 
 No ingresar datos personales reales. Los pagos de la demo no abren Mercado Pago ni mueven dinero. Un fixture que muestra “finalizado” no demuestra una liquidación real.
 
-![Pagos: cada contratación conserva su importe y operación independiente](assets/screenshots/payments-demo.jpg)
+![Pagos del frontend privado conectado: operaciones independientes](assets/screenshots-real/payments-pending.jpg)
+
+*Vista del sistema conectado; el recorrido de la demo mencionado arriba es independiente.*
 
 ## Validación y estado del proyecto
 
@@ -316,9 +320,10 @@ Esta publicación de documentación no ejecuta pagos ni altera los fixtures priv
 | [Guía de API](docs/06-api-contracts.md) | Endpoints reales, roles, semántica y contratos representativos |
 | [Frontend y demo](docs/07-frontend-and-demo.md) | Angular, UX, runtime, deploy y recorrido reproducible |
 | [Testing y evidencia](docs/08-testing-and-evidence.md) | Tests existentes, alcance E2E y evidencia sanitizada |
-| [Galería de capturas reales](docs/09-visual-tour.md) | Pantallas verificadas y qué demuestra cada una |
+| [Galería del sistema conectado](docs/09-visual-tour.md) | Frontend privado, mapa, lifecycle y Swagger reales |
 | [Decisiones y próximos pasos](docs/10-decisions-and-roadmap.md) | Tradeoffs actuales, límites y backlog |
-| [Recorrido paso a paso de la demo](docs/11-demo-walkthrough.md) | Interacciones por rol y evidencia del ciclo de contratación |
+| [Recorrido paso a paso de la demo](docs/11-demo-walkthrough.md) | Aplicación pública independiente, operaciones simuladas |
+| [Archivo visual de la demo](docs/12-demo-visual-archive.md) | Material anterior separado del frontend conectado |
 
 ## Alcance público y licencia
 

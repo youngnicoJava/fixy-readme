@@ -1,6 +1,6 @@
 # 11 — Recorrido reproducible de la demo
 
-[Índice](README.md) · [Galería de las 27 capturas](09-visual-tour.md) · [Abrir demo](https://youngnicojava.github.io/fixy-demo-frontend/)
+[Índice](README.md) · [Archivo de las 27 capturas de demo](12-demo-visual-archive.md) · [Abrir demo](https://youngnicojava.github.io/fixy-demo-frontend/)
 
 Este recorrido explica cómo explorar Fixy sin el backend privado. Todos los usuarios, direcciones, contratos y pagos son ficticios y se almacenan localmente en el navegador. No uses datos personales ni contraseñas reales. Los IDs creados durante una sesión pueden cambiar: no son enlaces públicos compartidos ni registros del backend.
 
