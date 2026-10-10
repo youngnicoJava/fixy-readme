@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "reviewDate": "2026-10-10",
   "kind": "PUBLIC_DEMO_BROWSER_SCREENSHOTS",
   "demo": "https://youngnicojava.github.io/fixy-demo-frontend/",
@@ -13,40 +13,207 @@
   },
   "screenshots": [
     {
-      "sha256": "7636be21370d867e4be3e2fd866d58355208fe5a3dfe02c0fc68195c86786a62",
+      "file": "assets/screenshots/address-modal-demo.jpg",
+      "route": "/#/home",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "PUBLIC_DEMO_UI",
+      "sha256": "036e355e07956c1eb337c2b17afa9ee42d8e5e8c446ceaf2e3839378bc83d126"
+    },
+    {
+      "file": "assets/screenshots/agreement-accepted-demo.jpg",
+      "route": "/#/requests/200",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "DEMO_SIMULATED_SEQUENCE",
+      "sha256": "fe8a61c0bae6fe0bbaa7abf98e02e7aa30b384e94f01630d3aa30f3fcb662e4a"
+    },
+    {
+      "file": "assets/screenshots/auth-login-demo.jpg",
+      "route": "/#/login",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "PUBLIC_DEMO_UI",
+      "sha256": "e26ebca1a03f789e97d753606783fa94f3db114eda5b548a396784e2200f642b"
+    },
+    {
+      "file": "assets/screenshots/auth-login-filled-demo.jpg",
+      "route": "/#/login",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "PUBLIC_DEMO_UI",
+      "sha256": "2753bdeb00652d74e38735548b45b4c0c99d6c5b3e927cec6ae2ca1609343f02"
+    },
+    {
+      "file": "assets/screenshots/auth-register-demo.jpg",
+      "route": "/#/register",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "PUBLIC_DEMO_UI",
+      "sha256": "ad05a6b82f0bf02715a1ba37dc1083cc41600c1d4695274059f9fde3debbce4d"
+    },
+    {
+      "file": "assets/screenshots/client-dashboard-demo.jpg",
+      "route": "/#/dashboard/client",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "PUBLIC_DEMO_UI",
+      "sha256": "f86c41557b0f50026746fcd0d29739d646a87f0b1fcab8b504e08fee9ff285aa"
+    },
+    {
       "file": "assets/screenshots/conversation-demo.jpg",
       "route": "/#/conversations/6103",
-      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT"
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "PUBLIC_DEMO_UI",
+      "sha256": "7636be21370d867e4be3e2fd866d58355208fe5a3dfe02c0fc68195c86786a62"
     },
     {
-      "sha256": "838afeb08a902ef8ce150735239ca11c8ba673ec59f1820911d2007d7d822ad4",
       "file": "assets/screenshots/demo-info.jpg",
       "route": "/#/demo-info",
-      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT"
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "PUBLIC_DEMO_UI",
+      "sha256": "838afeb08a902ef8ce150735239ca11c8ba673ec59f1820911d2007d7d822ad4"
     },
     {
-      "sha256": "67105294bf4eab907ee8da748f27603c4d4a08a94f1ad1689d043686e96400ab",
       "file": "assets/screenshots/home-demo.jpg",
       "route": "/#/home",
-      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT"
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "PUBLIC_DEMO_UI",
+      "sha256": "67105294bf4eab907ee8da748f27603c4d4a08a94f1ad1689d043686e96400ab"
     },
     {
-      "sha256": "ec6dbdc2bc366c00456469076253e1fc6f92522f8d232ccb560faf680f62bec1",
+      "file": "assets/screenshots/navbar-account-demo.jpg",
+      "route": "/#/home",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "PUBLIC_DEMO_UI",
+      "sha256": "0d7caf85e3da5e921cbe9395ece39363aeea8639b486f2dac45191b881610a80"
+    },
+    {
+      "file": "assets/screenshots/navbar-addresses-demo.jpg",
+      "route": "/#/home",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "PUBLIC_DEMO_UI",
+      "sha256": "0f5a2da7c56083fd01349e8dcc12524ff900e01daba8047ddc6abc8e60fd32e7"
+    },
+    {
+      "file": "assets/screenshots/payment-simulation-modal-demo.jpg",
+      "route": "/#/requests/200",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "DEMO_SIMULATED_SEQUENCE",
+      "sha256": "8aa8fc73b563e1561d596e2a6feb06076515f7769f122c0537d25421b948651f"
+    },
+    {
       "file": "assets/screenshots/payments-demo.jpg",
       "route": "/#/payments",
-      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT"
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "PUBLIC_DEMO_UI",
+      "sha256": "ec6dbdc2bc366c00456469076253e1fc6f92522f8d232ccb560faf680f62bec1"
     },
     {
-      "sha256": "a978620cfbaca590fbffc000b295c31b1b77d72b1f54ddb571f295d0f2a925a1",
+      "file": "assets/screenshots/proposal-create-demo.jpg",
+      "route": "/#/requests/200",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "DEMO_SIMULATED_SEQUENCE",
+      "sha256": "56fcdd59da2d0d5b8f16eb68ae3ecf7dfb54e98748580b74ed9f584d1bb2441d"
+    },
+    {
+      "file": "assets/screenshots/quote-create-demo.jpg",
+      "route": "/#/requests/200",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "DEMO_SIMULATED_SEQUENCE",
+      "sha256": "4a83859f2d7540c9fd1fa7aa56752c8d65234521e20820ebf0418f3a82dd28eb"
+    },
+    {
+      "file": "assets/screenshots/quote-pending-demo.jpg",
+      "route": "/#/requests/200",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "DEMO_SIMULATED_SEQUENCE",
+      "sha256": "8851ff1033778ecdd5e16c5c441513799c680aaece0788e50b16a9df519eeac3"
+    },
+    {
       "file": "assets/screenshots/request-agreement-demo.jpg",
       "route": "/#/requests/103",
-      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT"
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "PUBLIC_DEMO_UI",
+      "sha256": "a978620cfbaca590fbffc000b295c31b1b77d72b1f54ddb571f295d0f2a925a1"
     },
     {
-      "sha256": "d1d9d1bdc3e38b9a9023843bd54c9911827c8c3b04b09bf4ad646b02955a4a5a",
+      "file": "assets/screenshots/request-completed-review-fixture-demo.jpg",
+      "route": "/#/requests/105",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "PRESEEDED_DEMO_FIXTURE",
+      "sha256": "0eae45163ed532179609ee232eea6c03567892486d1bbed77f7b14704114e681"
+    },
+    {
+      "file": "assets/screenshots/request-create-demo.jpg",
+      "route": "/#/requests/new",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "PUBLIC_DEMO_UI",
+      "sha256": "84893e72fca1bb1b35b25407604fb38f751cab2253a94decedebd4a562dd3cba"
+    },
+    {
+      "file": "assets/screenshots/request-held-demo.jpg",
+      "route": "/#/requests/200",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "DEMO_SIMULATED_SEQUENCE",
+      "sha256": "7096e358612723496cf33b3e62896831759ca370bd507d955a1495884e3cc56e"
+    },
+    {
+      "file": "assets/screenshots/request-in-progress-demo.jpg",
+      "route": "/#/requests/200",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "DEMO_SIMULATED_SEQUENCE",
+      "sha256": "b64c2485e63d8dff31624a79bb22bec4ea603e3d3671b5f738a6a9abbc9dde61"
+    },
+    {
+      "file": "assets/screenshots/request-matched-demo.jpg",
+      "route": "/#/requests/200",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "DEMO_SIMULATED_SEQUENCE",
+      "sha256": "cba183cde54a7c8363013174779b3beeb7ffe64163ad164e766cf7a0ebacf95f"
+    },
+    {
+      "file": "assets/screenshots/request-open-demo.jpg",
+      "route": "/#/requests/200",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "DEMO_SIMULATED_SEQUENCE",
+      "sha256": "984e672edd65223646216f8a32bc383f518b788a05c15c913655a2e81eaca9ac"
+    },
+    {
+      "file": "assets/screenshots/request-proposals-demo.jpg",
+      "route": "/#/requests/200",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "DEMO_SIMULATED_SEQUENCE",
+      "sha256": "dfb57fb57cf6bcbae7eb2b418ec2b95ee3483349ff2f33bfd226796c4f209944"
+    },
+    {
+      "file": "assets/screenshots/request-publish-review-demo.jpg",
+      "route": "/#/requests/publish",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "PUBLIC_DEMO_UI",
+      "sha256": "de1b9cb35fe92683896bfeaa394155ca2f3a2aebb66532c15f0c69e6ec60b611"
+    },
+    {
+      "file": "assets/screenshots/service-offering-detail-demo.jpg",
+      "route": "/#/services/11",
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "PUBLIC_DEMO_UI",
+      "sha256": "bace5f6a608713ea511d55571ab292e9d373be35eadb5fe23933118231f1dce6"
+    },
+    {
       "file": "assets/screenshots/worker-dashboard-demo.jpg",
       "route": "/#/dashboard/worker",
-      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT"
+      "scope": "FICTIONAL_LOCAL_DEMO_NOT_REAL_PAYMENT",
+      "evidenceKind": "PUBLIC_DEMO_UI",
+      "sha256": "d1d9d1bdc3e38b9a9023843bd54c9911827c8c3b04b09bf4ad646b02955a4a5a"
     }
-  ]
+  ],
+  "capturedDemoSequence": {
+    "localRequestId": 200,
+    "title": "Demo portfolio · Reparar pérdida de agua",
+    "worker": "Luca Prodan",
+    "client": "José María Paz",
+    "amount": 55000,
+    "currency": "ARS",
+    "lastVerifiedWorkState": "IN_PROGRESS",
+    "payment": "SIMULATED_HELD",
+    "completion": "NOT_VERIFIED_NATIVE_CONFIRM_BLOCKED",
+    "review": "PRESEEDED_FIXTURE_105_ONLY",
+    "realProviderCallsExecuted": false,
+    "sharedPublicRequest": false
+  }
 }

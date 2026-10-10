@@ -12,6 +12,30 @@ Fixy conecta a personas que necesitan resolver un problema con profesionales de 
 
 *Captura del frontend público, tomada en navegador el 10 de octubre de 2026. Las capturas de este repositorio corresponden a la demo, no a una plataforma productiva.*
 
+## Recorrido visual ampliado
+
+**[Ver las 27 capturas comentadas](docs/09-visual-tour.md) · [Seguir la demo paso a paso](docs/11-demo-walkthrough.md)**
+
+La galería incluye login y registro, navbar con menús desplegados, modal de direcciones, dashboards cliente/profesional, detalle de publicación y una solicitud nueva desde publicación hasta trabajo en progreso. Presupuesto, acuerdo y pago simulado se muestran como etapas distintas. Completion y review están ilustradas con un fixture identificado, no como una transición nueva certificada.
+
+<details>
+<summary>Ver modal de direcciones y navegación de cuenta</summary>
+
+![Modal real de dirección en la demo](assets/screenshots/address-modal-demo.jpg)
+
+![Navbar con menú de cuenta abierto](assets/screenshots/navbar-account-demo.jpg)
+
+</details>
+
+<details>
+<summary>Ver dashboard cliente y detalle del servicio publicado</summary>
+
+![Dashboard real del cliente](assets/screenshots/client-dashboard-demo.jpg)
+
+![Detalle de publicación del profesional](assets/screenshots/service-offering-detail-demo.jpg)
+
+</details>
+
 ## Contenido
 
 - [El problema que resuelve](#el-problema-que-resuelve)
@@ -294,6 +318,7 @@ Esta publicación de documentación no ejecuta pagos ni altera los fixtures priv
 | [Testing y evidencia](docs/08-testing-and-evidence.md) | Tests existentes, alcance E2E y evidencia sanitizada |
 | [Galería de capturas reales](docs/09-visual-tour.md) | Pantallas verificadas y qué demuestra cada una |
 | [Decisiones y próximos pasos](docs/10-decisions-and-roadmap.md) | Tradeoffs actuales, límites y backlog |
+| [Recorrido paso a paso de la demo](docs/11-demo-walkthrough.md) | Interacciones por rol y evidencia del ciclo de contratación |
 
 ## Alcance público y licencia
 

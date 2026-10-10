@@ -16,6 +16,7 @@ Esta documentación describe tres proyectos privados que cooperan: frontend Angu
 8. [Testing](08-testing-and-evidence.md): qué evidencia existe y qué falta demostrar.
 9. [Galería](09-visual-tour.md): capturas reales de la demo publicada.
 10. [Decisiones y backlog](10-decisions-and-roadmap.md): alcance deliberado y trabajo pendiente.
+11. [Recorrido de la demo](11-demo-walkthrough.md): pasos por rol, publicación, contratación y límites de la evidencia visual.
 
 ## Cómo interpretar las afirmaciones
 
